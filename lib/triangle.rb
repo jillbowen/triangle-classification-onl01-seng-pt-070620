@@ -18,13 +18,12 @@ class Triangle
       raise TriangleError
     end
   end
+end
   
   class TriangleError < StandardError
     def message
       puts "Invalid Triangle"
     end
   end
-    
-end
 
 # @a + @b < @c || @a + @c < @b || @b + @c < @a 
