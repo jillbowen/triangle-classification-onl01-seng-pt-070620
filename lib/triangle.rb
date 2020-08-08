@@ -4,4 +4,8 @@ class Triangle
   def initialize(attributes)
     attributes.each {|k,v| self.send(("#{k}="), value)}
   end
+  
+  def kind 
+    
+  end
 end
