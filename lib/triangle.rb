@@ -15,9 +15,7 @@ class Triangle
     elsif @a != @b && @a != @c && @b != @c 
       return :scalene
     else 
-        raise TriangleError
-        puts error.message
-      end
+      raise TriangleError
     end
   end
   
