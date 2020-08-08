@@ -8,8 +8,13 @@ class Triangle
   end
   
   def kind 
-    if @a = @b = @c
+    if @a = @b && @a = @c && @b = @c
       return :equilateral
-    elsif @a = @b || @a = @c || @b = @c 
+    elsif @a = @b || @a = @c || @b = @c
+      return :isosceles
+    elsif @a != @b && @a != @c && @b != @c 
+      return :scalene
+    else
+      
   end
 end
