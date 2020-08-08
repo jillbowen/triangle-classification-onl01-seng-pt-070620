@@ -8,7 +8,6 @@ class Triangle
   end
   
   def kind
-    binding.pry
     if @a == @b && @a == @c && @b == @c
       return :equilateral
     elsif @a == @b || @a == @c || @b == @c
