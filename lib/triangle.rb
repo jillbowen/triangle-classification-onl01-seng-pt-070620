@@ -10,6 +10,6 @@ class Triangle
   def kind 
     if @a = @b = @c
       return :equilateral
-    elsif 
+    elsif @a = @b || @a = @c || @b = @c 
   end
 end
