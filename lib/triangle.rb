@@ -15,6 +15,7 @@ class Triangle
     elsif @a != @b && @a != @c && @b != @c 
       return :scalene
     else
-      
+      raise TriangleError
+    end
   end
 end
