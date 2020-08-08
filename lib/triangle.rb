@@ -14,10 +14,10 @@ class Triangle
       return :isosceles
     elsif @a != @b && @a != @c && @b != @c 
       return :scalene
-      binding.pry
     else @a = 0 && @b = 0 && @c == 0
       raise TriangleError
     end
+    binding.pry
   end
   
   class TriangleError < StandardError
