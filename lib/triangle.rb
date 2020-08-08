@@ -16,11 +16,14 @@ class Triangle
       return :scalene
     else @a + @b < @c || @a + @c < @b || @b + @c < @a 
       raise TriangleError
+      puts error.message
     end
   end
   
   class TriangleError < StandardError
-    
+    def message
+      
+    end
   end
     
 end
