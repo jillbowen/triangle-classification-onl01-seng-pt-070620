@@ -20,9 +20,7 @@ class Triangle
   end
   
   class TriangleError < StandardError
-  
   end
-    
 end
 
 # @a + @b < @c || @a + @c < @b || @b + @c < @a 
