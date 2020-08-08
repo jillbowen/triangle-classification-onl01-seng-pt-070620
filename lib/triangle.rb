@@ -9,6 +9,6 @@ class Triangle
   end
   
   def kind 
-    self.each {|side| 
+    
   end
 end
