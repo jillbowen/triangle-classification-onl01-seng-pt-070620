@@ -10,11 +10,13 @@ class Triangle
   def kind
     if @a <= 0 || @b <= 0 || @c <= 0
       raise TriangleError
+    elsif @a + @b < @c || @a + @c < @b || @b + @c <@a 
+    
     elsif @a == @b && @a == @c && @b == @c
       return :equilateral
     elsif @a == @b || @a == @c || @b == @c
       return :isosceles
-    elsif @a != @b && @a != @c && @b != @c 
+    else @a != @b && @a != @c && @b != @c 
       return :scalene
     end
   end
