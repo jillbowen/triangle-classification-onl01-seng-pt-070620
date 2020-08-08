@@ -6,10 +6,9 @@ class Triangle
     @equilateral = equilateral
     @isoseles = isoseles
     @scalene = scalene
-    binding.pry
   end
   
   def kind 
-    
+    self.each {|side| 
   end
 end
