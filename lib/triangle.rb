@@ -17,7 +17,7 @@ class Triangle
     elsif @a + @b < @c || @a + @c < @b || @b + @c < @a 
       raise TriangleError
       puts error.message
-    else @a < 1 || @b < 1 || @c < 1 
+    else @a == 0 || @b == 0 || @c == 0  
       raise TriangleError
       puts error.message
     end
