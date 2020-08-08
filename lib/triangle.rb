@@ -7,7 +7,8 @@ class Triangle
     @c = c 
   end
   
-  def kind 
+  def kind
+    binding.pry
     if @a == @b && @a == @c && @b == @c
       return :equilateral
     elsif @a == @b || @a == @c || @b == @c
@@ -17,7 +18,6 @@ class Triangle
     else @a = 0 && @b = 0 && @c == 0
       raise TriangleError
     end
-    binding.pry
   end
   
   class TriangleError < StandardError
